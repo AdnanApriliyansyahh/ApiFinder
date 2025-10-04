@@ -13,10 +13,10 @@ A Python tool to search for credentials / API keys directly inside the response 
 ### Installation
 
 ```
-   git clone https://github.com/AdnanApriliyansyahh/find_creds_body.git
+   git clone https://github.com/AdnanApriliyansyahh/ApiFinder
    ```
 ```
-   cd find_creds_body
+   cd ApiFinder
    ```
  ```
    pip3 install -r requirements.txt
@@ -33,7 +33,7 @@ A Python tool to search for credentials / API keys directly inside the response 
 2. Scan for API keys inside response bodies
 
 ```
-python3 find_creds_body.py way.txt -o api_body_creds.txt
+python3 main.py way.txt -o api_body_creds.txt
 ```
 3. Output Example (api_body_creds.txt):
 
@@ -57,7 +57,7 @@ python3 find_creds_body.py way.txt -o api_body_creds.txt
 ```
 subfinder -d example.com -silent | tee subs.txt
 cat subs.txt | waybackurls | tee way.txt
-python3 find_creds_body.py way.txt -o api_body_creds.txt
+python3 main.py way.txt -o api_body_creds.txt
 ```
 
 
